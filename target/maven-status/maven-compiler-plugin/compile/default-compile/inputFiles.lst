@@ -1,0 +1,9 @@
+D:\5th sem\projects\To-Do-App\src\main\java\com\example\todoapp\service\TodoService.java
+D:\5th sem\projects\To-Do-App\src\main\java\com\example\todoapp\TodoAppApplication.java
+D:\5th sem\projects\To-Do-App\src\main\java\com\example\todoapp\controller\TodoController.java
+D:\5th sem\projects\To-Do-App\src\main\java\com\example\todoapp\exception\GlobalExceptionHandler.java
+D:\5th sem\projects\To-Do-App\src\main\java\com\example\todoapp\repository\TodoRepository.java
+D:\5th sem\projects\To-Do-App\src\main\java\com\example\todoapp\model\Todo.java
+D:\5th sem\projects\To-Do-App\src\main\java\com\example\todoapp\dto\TodoDto.java
+D:\5th sem\projects\To-Do-App\src\main\java\com\example\todoapp\config\DataInitializer.java
+D:\5th sem\projects\To-Do-App\src\main\java\com\example\todoapp\dto\CreateTodoRequest.java
