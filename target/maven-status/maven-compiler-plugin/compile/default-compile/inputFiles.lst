@@ -1,9 +1,9 @@
-D:\5th sem\projects\To-Do-App\src\main\java\com\example\todoapp\config\DataInitializer.java
-D:\5th sem\projects\To-Do-App\src\main\java\com\example\todoapp\controller\TodoController.java
-D:\5th sem\projects\To-Do-App\src\main\java\com\example\todoapp\dto\CreateTodoRequest.java
-D:\5th sem\projects\To-Do-App\src\main\java\com\example\todoapp\dto\TodoDto.java
-D:\5th sem\projects\To-Do-App\src\main\java\com\example\todoapp\exception\GlobalExceptionHandler.java
-D:\5th sem\projects\To-Do-App\src\main\java\com\example\todoapp\model\Todo.java
-D:\5th sem\projects\To-Do-App\src\main\java\com\example\todoapp\repository\TodoRepository.java
-D:\5th sem\projects\To-Do-App\src\main\java\com\example\todoapp\service\TodoService.java
-D:\5th sem\projects\To-Do-App\src\main\java\com\example\todoapp\TodoAppApplication.java
+/Users/I740919/Desktop/personal/talks/gatling - aug 30/To-Do-App-Java-/src/main/java/com/example/todoapp/TodoAppApplication.java
+/Users/I740919/Desktop/personal/talks/gatling - aug 30/To-Do-App-Java-/src/main/java/com/example/todoapp/config/DataInitializer.java
+/Users/I740919/Desktop/personal/talks/gatling - aug 30/To-Do-App-Java-/src/main/java/com/example/todoapp/controller/TodoController.java
+/Users/I740919/Desktop/personal/talks/gatling - aug 30/To-Do-App-Java-/src/main/java/com/example/todoapp/dto/CreateTodoRequest.java
+/Users/I740919/Desktop/personal/talks/gatling - aug 30/To-Do-App-Java-/src/main/java/com/example/todoapp/dto/TodoDto.java
+/Users/I740919/Desktop/personal/talks/gatling - aug 30/To-Do-App-Java-/src/main/java/com/example/todoapp/exception/GlobalExceptionHandler.java
+/Users/I740919/Desktop/personal/talks/gatling - aug 30/To-Do-App-Java-/src/main/java/com/example/todoapp/model/Todo.java
+/Users/I740919/Desktop/personal/talks/gatling - aug 30/To-Do-App-Java-/src/main/java/com/example/todoapp/repository/TodoRepository.java
+/Users/I740919/Desktop/personal/talks/gatling - aug 30/To-Do-App-Java-/src/main/java/com/example/todoapp/service/TodoService.java

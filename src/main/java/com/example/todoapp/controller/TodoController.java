@@ -10,9 +10,12 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import com.github.javafaker.Faker;
 
 @RestController
 @RequestMapping("/api/todos")
@@ -20,6 +23,8 @@ import java.util.Map;
 public class TodoController {
 
     private final TodoService todoService;
+    String filePath = "src/test/resources/data/todos.csv";
+    Faker faker = new Faker();
 
     @Autowired
     public TodoController(TodoService todoService) {
@@ -87,5 +92,39 @@ public class TodoController {
         stats.put("completed", todoService.getCompletedCount());
         stats.put("pending", todoService.getPendingCount());
         return ResponseEntity.ok(stats);
+    }
+
+    @GetMapping("/unstable")
+    public ResponseEntity<String> unstableEndpoint() throws InterruptedException {
+        if (Math.random() < 0.3) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Random failure");
+        }
+        else if(Math.random()>0.4 && Math.random()<0.6){
+            Thread.sleep(5000);
+            return ResponseEntity.ok("This was slow!");
+        }
+        return ResponseEntity.ok("Success!");
+    }
+
+
+    @GetMapping("/generate-csv")
+    public String generateCsv() {
+        String filePath = "src/test/resources/data/todos.csv"; // Gatling reads from here
+
+        try (FileWriter writer = new FileWriter(filePath, false)) {
+            // Header
+            writer.write("title,description\n");
+
+            // Generate 20 fake records
+            for (int i = 1; i <= 100; i++) {
+                String title = faker.lorem().sentence(3);
+                String desc = faker.lorem().sentence(6);
+                writer.write(title + "," + desc + "\n");
+            }
+        } catch (IOException e) {
+            throw new RuntimeException("Error writing CSV", e);
+        }
+
+        return "CSV generated at " + filePath;
     }
 }
